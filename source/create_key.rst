@@ -12,7 +12,8 @@ On your account settings page you will now see a new section called
 .. image:: static/api_access.png
 
 Fill in both the website url and :doc:`callback </callback>` url. You can use a
-service like RequestBin for your callback url if your don't have one yet.
+service like `mockbin <http://mockbin.org/>`_ for your callback url if your
+don't have one yet.
 
 Once you have saved the page a JSON Web Token (`JWT <https://jwt.io/>`_) will be
 generated for you.
