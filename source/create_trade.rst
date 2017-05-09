@@ -78,6 +78,12 @@ The Payment URL
 
 When you create a trade a summary of the information you posted will be sent
 back to you along with a **payment_url**
-[/contracts/deposit_details/YOUR-TRADE-ID]. This link can be embeded into your
+[/api/contracts/deposit/YOUR-TRADE-ID]. This link can be embeded into your
 website through an iframe and will allow users to access to our banking details
-for EFT payment.
+for EFT payment. Alsi included is a **withdraw_url**
+[/api/contracts/deposit/YOUR-TRADE-ID]. This allows sellers to add their own
+banking details to a trade.
+
+.. warning::
+  The **withdraw_url** been depricated in favor of reciving the banking details
+  during the create trade process.
