@@ -4,6 +4,9 @@ Creating a Trade
 The technical specifications can be viewed on our
 `API docs <https://api.tradesafe.co.za/#contract-post>`_.
 
+.. warning::
+  You are resposible for providing the correct information.
+
 PHP Example
 -----------
 
@@ -44,7 +47,12 @@ PHP Example
     "completion_months" => 12,
     "completion_years" => 5,
     "inspection_days" => 7,
-    "delivery_required" => false
+    "delivery_required" => false,
+    "seller_bank_account": {
+      "number": "0123456789",
+      "branch_code": "123456",
+      "type": "Cheque"
+    }
   );
 
   curl_setopt_array($curl, array(
