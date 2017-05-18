@@ -30,14 +30,14 @@ PHP Example
     "buyer" => array(
       "first_name" => "John",
       "email" => "user@example.net",
-      "mobile_country" => "ZAF",
+      "mobile_country" => "ZA",
       "mobile" => "0123456789",
       "id_number" => "0000001111223"
     ),
     "seller" => array(
       "first_name" => "Jane",
       "email" => "user@example.com",
-      "mobile_country" => "ZAF",
+      "mobile_country" => "ZA",
       "mobile" => "0123456789",
       "id_number" => "0000001111223"
     ),
