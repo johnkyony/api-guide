@@ -48,3 +48,25 @@ The following constants are used for *fee_allocation*.
 * 0 - Buyer Pays
 * 1 - Seller Pays
 * 2 - 50/50 Split
+
+Beneficiaries
+-------------
+The following is used to for *beneficiary_types*
+
+* ADVISER - Adviser
+* CONSULTANT - Consultant
+* DELIVERY_COMPANY - Delivery Company
+* FINANCIAL_INSTITUTION - Financial Institution
+* INTERMEDIARY - Intermediary
+* LEGAL_COUNSEL - Legal counsel
+* SUB_AGENT - Sub-Agent
+* {custom_bank_name} - Other
+
+Bank Accounts
+-------------
+The following is used to for *account_types*
+
+* CHEQUE - Cheque/Current Account
+* SAVINGS - Savings Account
+* TRANSMISSION - Transmission Account
+* BOND - Bond Account
