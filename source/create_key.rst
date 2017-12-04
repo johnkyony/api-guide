@@ -1,7 +1,7 @@
 Creating your API Key
 =====================
 
-Once you have recieved notice that the API has been enabled, login and goto
+Once you have received notice that the API has been enabled, login and goto
 **My Account**.
 
 .. image:: static/user_links.png

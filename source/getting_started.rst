@@ -7,7 +7,7 @@ Useful Links:
 * `sandbox`_ - Our sandbox environment for testing.
 
 To start using our API you first need to crate an account on our `sandbox`_
-environment. Ensure that both your email and movile number have been validated.
+environment. Ensure that both your email and mobile number have been validated.
 
 From here you can manually create test trades through the sandbox site to get an
 idea of how the process works.

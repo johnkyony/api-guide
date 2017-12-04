@@ -1,11 +1,11 @@
-Recieving a Callback
+Receiving a Callback
 ====================
 
-All callbacks include the following data. When recieving a callback you must
+All callbacks include the following data. When receiving a callback you must
 return a
 `200 response <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#200>`_
-code, TradeSafe will continue retry the callback untill a
-200 response code is recieved or the timeout condition it met.
+code, TradeSafe will continue retry the callback until a
+200 response code is received or the timeout condition it met.
 
 Example of the callback data
 ----------------------------
@@ -21,7 +21,7 @@ Example of the callback data
    "owner_id":"2",
    "litigation_initiator_id":"0",
    "negotiation_id":null,
-   "step":"FUNDS_RECIEVED",
+   "step":"FUNDS_RECEIVED",
    "sent_started":null,
    "industry":"GENERAL_GOODS_SERVICES",
    "meta":{

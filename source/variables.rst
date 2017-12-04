@@ -30,9 +30,9 @@ The following constants are used for *step*.
 * NEGOTIATION - Trade Negotiation
 * ACCEPTED - Trade Accepted
 * FUNDS_DEPOSITED - Funds Deposited
-* FUNDS_RECIEVED - Funds Received & Cleared
+* FUNDS_RECEIVED - Funds Received & Cleared
 * SENT - Goods Sent / Service Initiated
-* GOODS_RECIEVED - Goods Received / Service Received
+* GOODS_RECEIVED - Goods Received / Service Received
 * GOODS_ACCEPTED - Goods Accepted / Service Accepted
 * FUNDS_RELEASED - Funds Released
 * COMPLETED - Trade Completed

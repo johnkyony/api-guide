@@ -5,7 +5,7 @@ The technical specifications can be viewed on our
 `API docs <https://api.tradesafe.co.za/#contract-post>`_.
 
 .. warning::
-You are resposible for providing the correct information.
+You are responsible for providing the correct information.
 
 PHP Example
 -----------
