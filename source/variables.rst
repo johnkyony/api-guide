@@ -73,3 +73,14 @@ The following is used to for *account_types*
 * SAVINGS - Savings Account
 * TRANSMISSION - Transmission Account
 * BOND - Bond Account
+
+Company Types
+-------------
+
+* private - Private company (Pty) Ltd
+* public - Public company (Ltd)
+* state - State-owned company (SOC)
+* inc - Personal liability company (Inc)
+* cc - Close Corporation (CC)
+* npc - Non-profit company (NPC)
+* other - Other
