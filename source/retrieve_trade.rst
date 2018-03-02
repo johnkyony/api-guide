@@ -34,8 +34,8 @@ PHP Example
   ?>
 
 This allows you to query any trade you have created at any time, the data is
-similar to what you recieve when creating a trade.
+similar to what you receive when creating a trade.
 
-This can be useful for recovering from an outage for example. We recomend that
-you cache this data and onlty make requests when necessary. As the callback will
-send through data everytime the trade is transitioned to a new step.
+This can be useful for recovering from an outage for example. We recommend that
+you cache this data and only make requests when necessary. As the callback will
+send through data every time the trade is transitioned to a new step.
