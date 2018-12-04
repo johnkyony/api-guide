@@ -48,9 +48,16 @@ The following constants are used for *fee_allocation*.
 * 0 - Buyer Pays
 * 1 - Seller Pays
 * 2 - 50/50 Split [Buyer / Seller]
-* 3 - 50/50 Split [Agent / Buyer]
-* 4 - 50/50 Split [Agent / Seller]
-* 5 - 3-Way Split [Agent / Buyer / Seller]
+* 3 - Agent Pays
+* 4 - 50/50 Split [Agent / Buyer]
+* 5 - 50/50 Split [Agent / Seller]
+* 6 - 3-Way Split [Agent / Buyer / Seller]
+
+The following constants are used for *agent_fee_allocation*
+
+* 0 - Buyer Pays
+* 1 - Seller Pays
+* 2 - 50/50 Split [Buyer / Seller]
 
 Beneficiaries
 -------------
