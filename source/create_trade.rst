@@ -5,7 +5,7 @@ The technical specifications can be viewed on our
 `API docs <https://api.tradesafe.co.za/#contract-post>`_.
 
 .. warning::
-You are responsible for providing the correct information.
+  You are responsible for providing the correct information.
 
 PHP Example
 -----------
@@ -105,5 +105,5 @@ Also included is a **withdraw_url** [/api/contracts/deposit/YOUR-TRADE-ID].
 This allows sellers to add their own banking details to a trade.
 
 .. warning::
-The **withdraw_url** been deprecated in favor of receiving the banking details
+  The **withdraw_url** been deprecated in favor of receiving the banking details
   during the create trade process.

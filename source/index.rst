@@ -35,6 +35,7 @@ contributions.
     create_trade
     retrieve_trade
     complete_trade
+    complete_milestone
     callback
 
 .. _var-docs:
