@@ -19,34 +19,34 @@ PHP Example
 .. code-block:: php
   :linenos:
 
-      <?php
-      # The JWT for your account
-      $json_token = 'your_jwt_token';
+  <?php
+  # The JWT for your account
+  $json_token = 'your_jwt_token';
 
-      # The url of the API
-      $service_url = 'https://sandbox.tradesafe.co.za/api/contract/{ID_OF_THE_TRADE}.json';
+  # The url of the API
+  $service_url = 'https://sandbox.tradesafe.co.za/api/contract/{ID_OF_THE_TRADE}.json';
 
-      $curl = curl_init($service_url);
+  $curl = curl_init($service_url);
 
-      $postfields = array(
-        "id" => "5899715f-bda4-4c91-b78c-033aac102991",
-        "step" => "GOODS_ACCEPTED"
-      );
+  $postfields = array(
+    "id" => "5899715f-bda4-4c91-b78c-033aac102991",
+    "step" => "GOODS_ACCEPTED"
+  );
 
-      curl_setopt_array($curl, array(
-        CURLOPT_CUSTOMREQUEST => "PUT",
-        CURLOPT_RETURNTRANSFER => TRUE,
-        CURLOPT_HTTPHEADER => array(
-          'Authorization: Bearer ' . $json_token,
-          'Content-Type: application/json'
-        ),
-        CURLOPT_POSTFIELDS => json_encode($postfields)
-      ));
+  curl_setopt_array($curl, array(
+    CURLOPT_CUSTOMREQUEST => "PUT",
+    CURLOPT_RETURNTRANSFER => TRUE,
+    CURLOPT_HTTPHEADER => array(
+      'Authorization: Bearer ' . $json_token,
+      'Content-Type: application/json'
+    ),
+    CURLOPT_POSTFIELDS => json_encode($postfields)
+  ));
 
-      $curl_response = curl_exec($curl);
-      curl_close($curl);
+  $curl_response = curl_exec($curl);
+  curl_close($curl);
 
-      $response = json_decode($curl_response);
+  $response = json_decode($curl_response);
 
-      print_r($response);
-      ?>
+  print_r($response);
+  ?>
