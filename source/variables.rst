@@ -43,7 +43,7 @@ The following constants are used for *step*.
 
 Fee Allocation
 --------------
-The following constants are used for *fee_allocation*.
+The following constants are used for TradeSafe's escrow fee *fee_allocation*.
 
 * 0 - Buyer Pays
 * 1 - Seller Pays
