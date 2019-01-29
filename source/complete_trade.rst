@@ -97,3 +97,53 @@ PHP Example 2
 
   print_r($response);
   ?>
+
+Amending a trade
+================
+
+When a client has accepts the goods there may be an amendment required. For example a 1000 items were ordered but only
+950 were delivered, the client wants to accept the goods on the condition of a refund for the items not delivered.
+
+This can be done by adding an amendment when setting the GOODS_ACCEPTED step. The 'renegotiated_value' replaces the
+original trade value before fees are deducted.
+
+PHP Example 3
+-------------
+
+.. code-block:: php
+  :linenos:
+
+  <?php
+  # The JWT for your account
+  $json_token = 'your_jwt_token';
+
+  # The url of the API
+  $service_url = 'https://sandbox.tradesafe.co.za/api/contract/{ID_OF_THE_TRADE}.json';
+
+  $curl = curl_init($service_url);
+
+  $postfields = array(
+    "id" => "5899715f-bda4-4c91-b78c-033aac102991",
+    "step" => "GOODS_ACCEPTED",
+    "amend" => array(
+      "renegotiated_value" => 100.01,
+    )
+  );
+
+  curl_setopt_array($curl, array(
+    CURLOPT_CUSTOMREQUEST => "PUT",
+    CURLOPT_RETURNTRANSFER => TRUE,
+    CURLOPT_HTTPHEADER => array(
+      'Authorization: Bearer ' . $json_token,
+      'Content-Type: application/json'
+    ),
+    CURLOPT_POSTFIELDS => json_encode($postfields)
+  ));
+
+  $curl_response = curl_exec($curl);
+  curl_close($curl);
+
+  $response = json_decode($curl_response);
+
+  print_r($response);
+  ?>
