@@ -127,7 +127,8 @@ PHP Example 3
     "step" => "GOODS_ACCEPTED",
     "amend" => array(
       "renegotiated_value" => 100.01,
-      "stock_volume" => 0,
+      "stock_volume" => 0, // optional
+      "refund_to_wallet" => 0, // optional
     )
   );
 
