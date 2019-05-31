@@ -33,9 +33,8 @@ transactions. A user can then manage their details from their TradeSafe account.
 
   // set headers
   curl_setopt($ch, CURLOPT_HTTPHEADER, [
-    'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3LnRyYWRlc2FmZS5jby56YSIsImF1ZCI6IndvcmRwcmVzcy50cmFkZXNhZmUuY28uemEiLCJpYXQiOiIxNTQ3NTUwMjA3IiwibmJmIjoiMTU0NzU1MDIwNyIsInVzZXJfaWQiOiIxIn0.eqCqj2Z83Ri9ZoPTVoh6mU6ucf5MCWZjP22sxdqHHCM',
+    'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...',
     'Content-Type: application/json; charset=utf-8',
-    'Cookie: CAKEPHP=ck6l8sggd083505a8elrtmmme6',
   ]);
 
   // json body

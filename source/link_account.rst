@@ -28,8 +28,7 @@ You first need to generate an auth token. This is used to identify your platform
 
   // set headers
   curl_setopt($ch, CURLOPT_HTTPHEADER, [
-    'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3LnRyYWRlc2FmZS5jby56YSIsImF1ZCI6IndvcmRwcmVzcy50cmFkZXNhZmUuY28uemEiLCJpYXQiOiIxNTQ3NTUwMjA3IiwibmJmIjoiMTU0NzU1MDIwNyIsInVzZXJfaWQiOiIxIn0.eqCqj2Z83Ri9ZoPTVoh6mU6ucf5MCWZjP22sxdqHHCM',
-    'Cookie: CAKEPHP=il8h5gnabmkub3tfgdia5mu461; SPSI=2f2ad2b4de285fdf19144ad50cf254cc; spcsrf=e5af7e2aa1b4cec1f89bd1c7a02a011d',
+    'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...',
   ]);
 
   // send the request and save response to $response
