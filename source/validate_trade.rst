@@ -1,4 +1,4 @@
-Creating a Trade
+Validate a Trade
 ================
 
 The technical specifications can be viewed on our
@@ -6,6 +6,9 @@ The technical specifications can be viewed on our
 
 .. warning::
   You are responsible for providing the correct information.
+
+Before creating a contract you can use the validate endpoint to ensure that the data is correct. On a successful
+validation the API will return a 200 status code along with the data you posted.
 
 PHP Example
 -----------
@@ -19,7 +22,7 @@ PHP Example
   $ch = curl_init();
 
   // set url
-  curl_setopt($ch, CURLOPT_URL, 'https://sandbox.tradesafe.co.za/api/contract');
+  curl_setopt($ch, CURLOPT_URL, 'https://sandbox.tradesafe.co.za/api/validate/contract');
 
   // set method
   curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
@@ -82,22 +85,3 @@ PHP Example
 
   // close curl resource to free up system resources
   curl_close($ch);
-
-The Payment URL
----------------
-
-When you create a trade a summary of the information you posted will be sent
-back to you along with a **payment_url**
-[/api/payment/eftsecure/YOUR-TRADE-ID]. This link can be embedded into your
-website through an iframe and will allow users to access to our banking details
-for EFT payment.
-
-You wil also get a **payfast_payment_url**. This URL provides an html button formatted in JSON that you can embed on
-your website.
-
-Also included is a **withdraw_url** [/api/contracts/deposit/YOUR-TRADE-ID].
-This allows sellers to add their own banking details to a trade.
-
-.. warning::
-  The **withdraw_url** been deprecated in favor of receiving the banking details
-  during the create trade process.

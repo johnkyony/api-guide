@@ -24,25 +24,37 @@ contributions.
 
     getting_started
     create_key
+    callback
 
 .. _api-docs:
 
 .. toctree::
     :maxdepth: 2
     :glob:
-    :caption: API Process:
+    :caption: API - Users
 
+    validate_user
+    create_user
+    link_account
+
+
+.. toctree::
+    :maxdepth: 2
+    :glob:
+    :caption: API - Contracts
+
+    validate_trade
     create_trade
     retrieve_trade
     complete_trade
     complete_milestone
-    callback
 
 .. _var-docs:
 
 .. toctree::
     :maxdepth: 2
     :glob:
-    :caption: Variables:
+    :caption: API - Variables:
 
+    get_constants
     variables

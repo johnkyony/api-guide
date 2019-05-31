@@ -27,7 +27,7 @@ PHP Example
   $json_token = 'your_jwt_token';
 
   # The url of the API
-  $service_url = 'https://sandbox.tradesafe.co.za/api/milestone/{ID_OF_THE_TRADE}/{ID_OF_THE_MILESTONE}.json';
+  $service_url = 'https://sandbox.tradesafe.co.za/api/milestone/{ID_OF_THE_TRADE}/{ID_OF_THE_MILESTONE}';
 
   $curl = curl_init($service_url);
 
