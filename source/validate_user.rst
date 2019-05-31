@@ -51,6 +51,11 @@ PHP Example
       'type' => 'CHEQUE',
       'branch_code' => '123456'
     ],
+    'company' => [
+      'name' => 'Company Name',
+      'reg_number' => '123/456/789',
+      'type' => 'Company Type'
+    ],
   ];
   $body = json_encode($json_array);
 
