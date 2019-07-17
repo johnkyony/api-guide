@@ -104,3 +104,6 @@ company-suffix-types
 
 bank-account-types
   A list of bank account types
+
+bank-codes
+  A list of bank branch (CBC) codes
