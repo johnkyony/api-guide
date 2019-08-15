@@ -90,4 +90,5 @@ Company Types
 * inc - Personal liability company (Inc)
 * cc - Close Corporation (CC)
 * npc - Non-profit company (NPC)
+* trust - Trust
 * other - Other
